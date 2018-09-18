@@ -1,0 +1,13 @@
+{
+  "name": "soren-tech-temp",
+  "version": "0.0.1",
+  "description": "A static website for Soren LLC",
+  "main": "index.js",
+  "repository": "git@github.com:SorenTech/soren-tech-temp.git",
+  "author": "apmarshall <apmarshall@soren.tech>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "blendid": "^4.4.3"
+  }
+}
