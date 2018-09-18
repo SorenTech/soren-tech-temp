@@ -105,10 +105,11 @@ module.exports = {
   */
 
   screens: {
-    'sm': '576px',
-    'md': '768px',
-    'lg': '992px',
-    'xl': '1200px',
+    'mob': '315px',
+    'tabp': '600px',
+    'tabl': '900px',
+    'desk': '1200px',
+    'mega': '1800px',
   },
 
 
