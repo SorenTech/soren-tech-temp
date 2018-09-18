@@ -37,6 +37,7 @@ module.exports = {
     const sass = require('gulp-sass');
     const gulpif = require('gulp-if');
     const sourcemaps = require('gulp-sourcemaps');
+    const path = require('path');
 
 		return function () {
 			const plugins = [
@@ -44,8 +45,8 @@ module.exports = {
 				require('autoprefixer')
 			];
 			const paths = {
-				src: path.resolve(process.env.INIT_CWD, PATH_CONFIG.src, PATH_CONFIG.stylesheets.src, '**/*.scss'),
-				dest: path.resolve(process.env.INIT_CWD, PATH_CONFIG.dest, PATH_CONFIG.stylesheets.dest)
+				src: path.resolve(process.env.INIT_CWD, PATH_CONFIG.src, PATH_CONFIG.stylesheets.src, '**/*.{' + TASK_CONFIG.stylesheets.extensions + '}'),
+        dest: path.resolve(process.env.INIT_CWD, PATH_CONFIG.dest, PATH_CONFIG.stylesheets.dest)
 			};
 
 			return gulp
