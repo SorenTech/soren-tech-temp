@@ -358,7 +358,7 @@ module.exports = {
   |
   */
 
-  borderColors: global.Object.assign({ default: colors['grey-light'] }, colors),
+  borderColors: global.Object.assign({ default: colors['brand-brown'] }, colors),
 
 
   /*
@@ -472,7 +472,8 @@ module.exports = {
     '48': '12rem',
     '64': '16rem',
     'full': '100%',
-    'screen': '100vh'
+    'screen': '100vh',
+    'stretch': '110vh'
   },
 
 
@@ -513,7 +514,8 @@ module.exports = {
   minHeight: {
     '0': '0',
     'full': '100%',
-    'screen': '100vh'
+    'screen': '100vh',
+    'stretch': '110vh'
   },
 
 
@@ -563,6 +565,7 @@ module.exports = {
   maxHeight: {
     'full': '100%',
     'screen': '100vh',
+    'stretch': '110vh',
   },
 
 
