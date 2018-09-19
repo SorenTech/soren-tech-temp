@@ -4,7 +4,7 @@ module.exports = {
   fonts       : true,
   static      : true,
   svgSprite   : true,
-  ghPages     : true,
+  ghPages     : false,
   stylesheets : true,
 
   javascripts: {
@@ -28,7 +28,7 @@ module.exports = {
   },
 
   stylesheets: {
-    extensions: ['scss'],
+    extensions: ["sass", "scss", "css"],
     alternateTask: function (gulp, PATH_CONFIG, TASK_CONFIG) {
     // PostCSS task instead of Sass
     const browserSync = require('browser-sync');
@@ -38,6 +38,7 @@ module.exports = {
     const gulpif = require('gulp-if');
     const sourcemaps = require('gulp-sourcemaps');
     const path = require('path');
+    const cssnano = require('gulp-cssnano')
 
 		return function () {
 			const plugins = [
@@ -52,8 +53,10 @@ module.exports = {
 			return gulp
 				.src(paths.src)
 				.pipe(gulpif(!global.production, sourcemaps.init()))
-				.pipe(sass())
-				.pipe(postcss(plugins))
+				.pipe(sass(TASK_CONFIG.stylesheets.sass))
+        .pipe(postcss(plugins))
+        //.on('error', handleErrors)
+        .pipe(gulpif(global.production, cssnano(TASK_CONFIG.stylesheets.cssnano)))
 				.pipe(gulpif(!global.production, sourcemaps.write()))
 				.pipe(gulp.dest(paths.dest))
 				.pipe(browserSync.stream());
