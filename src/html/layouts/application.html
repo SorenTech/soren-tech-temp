@@ -1,16 +1,23 @@
 {% from 'macros/helpers.html' import sprite %}
 <!doctype html>
-<html>
+<html lang="en" itemscope itemtype="http://schema.org/LocalBusiness">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src https://www.youtube.com; font-src https://fonts.googleapis.com https://fonts.gstatic.com https://use.fontawesome.com; form-action https://formspree.io; script-src 'self' https://use.fontawesome.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://use.fontawesome.com; img-src https://*.cloudfront.net 'self'; frame-src https://calendar.google.com https://www.youtube.com;">
     <title>{% block title %}{{ title }}{% endblock %}</title>
     <link rel="stylesheet" href="stylesheets/app.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant:400,500,700,700i|Lora:400,400i,700,700i" rel="stylesheet">
+    <script src="https://use.fontawesome.com/7842f7d5e7.js"></script>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="rating" content="General">
     {% include "shared/app-icons.html" %}
     {% block head %}{% endblock %}
   </head>
   <body>
     {% block content %}{% endblock %}
+    {% include "../shared/footer.html" %}
     {% block javascript %}
       <script src="javascripts/app.js"></script>
     {% endblock %}
