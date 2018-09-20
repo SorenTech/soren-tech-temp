@@ -1,3 +1,6 @@
-import './modules'
+window.sr = ScrollReveal({delay: 0.3});
+sr.reveal('#hello-container');
+sr.reveal('#discovery-container');
+sr.reveal('#contact-container');
 
-console.log(`app.js has loaded!`)
+document.getElementById("year").innerHTML = new Date().getFullYear();
