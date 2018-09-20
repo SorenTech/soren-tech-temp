@@ -7,7 +7,7 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src https://www.youtube.com; font-src https://fonts.googleapis.com https://fonts.gstatic.com https://use.fontawesome.com; form-action https://formspree.io; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://use.fontawesome.com https://cdn.fontawesome.com https://cdn.iubenda.com https://embed.typeform.com https://admin.typeform.com https://unpkg.com/scrollreveal/dist/scrollreveal.min.js https://ajax.cloudflare.com https://*.cloudfront.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://use.fontawesome.com https://cdn.iubenda.com https://*.cloudfront.net; img-src https://*.cloudfront.net https://cdn.iubenda.com 'self'; frame-src https://calendar.google.com https://www.youtube.com https://www.iubenda.com/ https://sorentech.typeform.com/ http://www.typeform.com/;">
     <title>{% block title %}{{ title }}{% endblock %}</title>
     <link rel="stylesheet" href="stylesheets/app.css">
-    <link href="https://fonts.googleapis.com/css?family=Cormorant:400,500,700,700i|Lora:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Volkhorn|Ubuntu " rel="stylesheet">
     <script src="https://use.fontawesome.com/7842f7d5e7.js"></script>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
@@ -17,6 +17,7 @@
   </head>
   <body class="bg-brand-blue">
     {% block content %}{% endblock %}
+    {% include "../shared/contact-container.html" %}
     {% include "../shared/footer.html" %}
     {% block javascript %}
       <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
