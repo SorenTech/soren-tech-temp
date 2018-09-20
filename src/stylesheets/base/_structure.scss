@@ -11,7 +11,7 @@
 @screen tabp {
     .step,
     .container-inner {
-        @apply min-h-stretch;
+        @apply h-stretch;
     }
 }
 
