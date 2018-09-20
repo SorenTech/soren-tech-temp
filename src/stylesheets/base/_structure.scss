@@ -1,6 +1,6 @@
 /* Primary Sections */
 .step {
-    @apply h-stretch bg-cover bg-center bg-no-repeat;
+    @apply min-h-stretch bg-cover bg-center bg-no-repeat;
 }
 
 .container-inner {
