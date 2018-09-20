@@ -133,7 +133,7 @@ module.exports = {
 
   fonts: {
     'sans': [
-      'Cormorant',
+      'Ubuntu',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
