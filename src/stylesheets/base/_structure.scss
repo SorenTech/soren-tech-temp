@@ -11,6 +11,13 @@
 @screen tabp {
     .step,
     .container-inner {
+        height: 150vh;
+    }
+}
+
+@screen tabl {
+    .step,
+    .container-inner {
         @apply h-stretch;
     }
 }
