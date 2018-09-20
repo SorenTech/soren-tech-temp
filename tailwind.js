@@ -133,6 +133,7 @@ module.exports = {
 
   fonts: {
     'sans': [
+      'Cormorant',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
@@ -147,6 +148,7 @@ module.exports = {
       'sans-serif',
     ],
     'serif': [
+      'Volkhorn',
       'Constantia',
       'Lucida Bright',
       'Lucidabright',
