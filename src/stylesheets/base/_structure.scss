@@ -1,0 +1,26 @@
+/* Primary Sections */
+.step {
+    @apply h-stretch bg-cover bg-center bg-no-repeat;
+}
+
+.container-inner {
+    @apply h-stretch py-8 opacity-50;
+}
+
+/* Blocks */
+.text-box {
+    @apply my-8 p-8 mx-auto max-w-lg;
+}
+
+@screen desk {
+    .text-box {
+        margin-left: 30%;
+        margin-right: 15%;
+    }
+}
+
+.logo-box {
+    margin-left: 55%;
+    margin-right: 10%;
+    max-width: 35%;
+}

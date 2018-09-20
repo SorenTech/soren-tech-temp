@@ -3,8 +3,9 @@ body {
   @apply .font-normal;
   @apply .leading-normal;
   @apply .tracking-normal;
-  @apply .text-brand-black;
   @apply .text-base;
+  color: white;
+  text-shadow: 1px 1px 1px black;
 }
 
 h1,

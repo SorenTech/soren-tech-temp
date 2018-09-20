@@ -1,11 +1,53 @@
-{#
-  Nunjucks Templating!
-  Homepage: https://mozilla.github.io/nunjucks/
-  Docs: https://mozilla.github.io/nunjucks/api.html
-#}
-
 {% extends 'layouts/application.html' %}
 
 {% block content %}
-  <h1 data-module="example">{{ message }}</h1>
+<div id="hello-container" class="step">
+  <div id="hello-inner" class="container-inner bg-brand-gray-dark">
+    <div class="logo-box">
+      <img id="soren-logo" src="https://s3.amazonaws.com/SorenMediaGroupCom/media/SorenLogoNew-Web.png">
+    </div><!-- logo -->
+    <div id="hello-text" class="text-box">
+      <h2>You measure your bottom line in impact, not dollars.</h2>
+      <h3>Don't let your mission be sidetracked by your overhead.</h3>
+      <br />
+      <p>Communications, marketing, and information technology should be fully integrated into your mission, not
+        relegated to a back office.</p>
+      <p>We help nonprofits go agile: using the web, social media, and cloud technology to maximize your team’s
+        productivity while minimizing costs.</p>
+    </div><!-- hello-text -->
+  </div><!-- hello-inner -->
+</div><!-- hello-container -->
+<div id="discovery-container" class="step">
+  <div id="discovery-inner" class="container-inner bg-brand-brown">
+    <div id="discovery-text" class="text-box">
+      <h2>Partnership-as-a-Service</h2>
+      <br />
+      <p>Our job is to help you do your job. We know your needs will be unique, so we start every relationship with
+      in-person interviews— both you interviewing us and us interviewing you— to make sure we are good fit and to get a
+      better understanding of how you work and where we can most effectively help.</p>
+    </div><!-- discovery-text -->
+  </div><!-- discovery-inner -->
+</div><!-- discovery-container -->
+<div id="contact-container" class="step">
+  <div class="typeform-widget" data-url="https://sorentech.typeform.com/to/ZhD0wb" style="width: 90vw; height: 99vh; margin-left: 5%; margin-top: 5vh;"></div>
+  <script>
+    (function () {
+      var qs, js, q, s, d = document,
+        gi = d.getElementById,
+        ce = d.createElement,
+        gt = d.getElementsByTagName,
+        id = "typef_orm",
+        b = "https://embed.typeform.com/";
+      if (!gi.call(d, id)) {
+        js = ce.call(d, "script");
+        js.id = id;
+        js.src = b + "embed.js";
+        q = gt.call(d, "script")[0];
+        q.parentNode.insertBefore(js, q)
+      }
+    })()
+  </script>
+  <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=ZhD0wb&utm_source=typeform.com-72064-Pro&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN"
+      style="color: #999" target="_blank">Typeform</a> </div>
+</div><!-- contact-container -->
 {% endblock %}
