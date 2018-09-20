@@ -1,10 +1,22 @@
 /* Primary Sections */
 .step {
-    @apply min-h-stretch bg-cover bg-center bg-no-repeat;
+    @apply bg-cover bg-center bg-no-repeat;
+}
+
+.step,
+.container-inner {
+    height: 200vh;
+}
+
+@screen tabp {
+    .step,
+    .container-inner {
+        @apply min-h-stretch;
+    }
 }
 
 .container-inner {
-    @apply h-stretch py-8 opacity-50;
+    @apply py-8 opacity-50;
 }
 
 /* Blocks */
