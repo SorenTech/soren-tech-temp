@@ -9,18 +9,11 @@
 
 /* Blocks */
 .text-box {
-    @apply my-8 p-8 mx-auto max-w-lg;
-}
-
-@screen desk {
-    .text-box {
-        margin-left: 30%;
-        margin-right: 15%;
-    }
+    @apply my-1 p-8 mx-auto max-w-lg;
 }
 
 .logo-box {
-    margin-left: 55%;
-    margin-right: 10%;
+    margin-left: 50%;
+    margin-right: 20%;
     max-width: 35%;
 }
