@@ -8,10 +8,16 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "blendid": "^4.4.3"
+    "blendid": "^4.4.3",
+    "snyk": "^1.161.1"
   },
   "devDependencies": {
     "gulp-postcss": "^8.0.0",
     "tailwindcss": "^0.6.5"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
